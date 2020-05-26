@@ -8,11 +8,11 @@ body {
   font-family: 'Kameron','Noto Sans JP', sans-serif;
 }
 
-.font-sm {
+.font-sm, .sec-three-caption {
   font-size: 14px;
 }
 
-.font-md {
+.font-md, .sec-three-title {
   font-size: 17px;
 }
 
@@ -20,7 +20,7 @@ body {
   font-size: 17px;
 }
 
-.font-lg {
+.font-lg, .sec-three-service {
   font-size: 25px;
 }
 
@@ -40,7 +40,30 @@ body {
   padding-bottom: 80px !important;
 }
 
-.content-width {
+.sec-three {
+  text-align: center;
+}
+
+.sec-three-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec-three-service {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sec-three-title {
+  color: #001871;
+}
+
+.content-width, .sec-three {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -60,6 +83,21 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+  .sec-three-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sec-three-item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
 }
 
 @media (min-width: 960px) {
@@ -68,16 +106,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-  .font-sm {
+  .font-sm, .sec-three-caption {
     font-size: 16px;
   }
-  .font-md {
+  .font-md, .sec-three-title {
     font-size: 19px;
   }
   .font-lr {
     font-size: 23px;
   }
-  .font-lg {
+  .font-lg, .sec-three-service {
     font-size: 36px;
   }
   .mb-lg {
