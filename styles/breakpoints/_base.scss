@@ -31,6 +31,30 @@ body{
 .pb-lg{
     padding-bottom: 80px !important;
 }
+.sec-three{
+    @extend .content-width;
+    text-align: center;
+
+    &-inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-service{
+        @extend .font-lg;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    &-title{
+        @extend .font-md;
+        color:$SubTitle;
+    }
+
+    &-caption{
+        @extend .font-sm;
+    }
+}
 .content-width{
     width: 90%;
     margin:0 auto;
