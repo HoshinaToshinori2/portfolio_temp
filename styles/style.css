@@ -24,7 +24,7 @@ body {
   font-size: 25px;
 }
 
-.mb-sm {
+.mb-sm, .sec-three-item {
   margin-bottom: 16px !important;
 }
 
@@ -32,12 +32,24 @@ body {
   margin-bottom: 80px !important;
 }
 
+.pt-sm, .sec-three-bg {
+  padding-top: 32px !important;
+}
+
 .pb-sm {
   padding-bottom: 16px !important;
 }
 
+.pb-md, .sec-three-bg {
+  padding-bottom: 32px !important;
+}
+
 .pb-lg {
   padding-bottom: 80px !important;
+}
+
+.sec-three-bg {
+  background-color: #41B6E6;
 }
 
 .sec-three {
@@ -54,6 +66,14 @@ body {
           flex-direction: column;
 }
 
+.sec-three-item {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 6px 5px rgba(255, 255, 255, 0.4);
+          box-shadow: 2px 6px 5px rgba(255, 255, 255, 0.4);
+}
+
 .sec-three-service {
   font-weight: 600;
   margin-bottom: 0;
@@ -61,6 +81,22 @@ body {
 
 .sec-three-title {
   color: #001871;
+}
+
+.sec-three-thumb {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sec-three-thumb img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .content-width, .sec-three {
@@ -120,6 +156,12 @@ Stylesheet: 960px以上のモニタで適用
   }
   .mb-lg {
     margin-bottom: 150px !important;
+  }
+  .pt-sm, .sec-three-bg {
+    padding-top: 48px !important;
+  }
+  .pb-md, .sec-three-bg {
+    padding-bottom: 48px !important;
   }
   .pb-lg {
     padding-bottom: 150px !important;
