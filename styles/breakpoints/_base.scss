@@ -25,21 +25,37 @@ body{
 .mb-lg{
     margin-bottom: 80px !important;
 }
+.pt-sm{
+    padding-top: 32px !important;
+}
 .pb-sm{
     padding-bottom: 16px !important;
+}
+.pb-md{
+    padding-bottom: 32px !important;
 }
 .pb-lg{
     padding-bottom: 80px !important;
 }
+.sec-three-bg{
+    @extend .pb-md;
+    @extend .pt-sm;
+    background-color: $sBG;
+}
 .sec-three{
     @extend .content-width;
     text-align: center;
-
     &-inner{
         display: flex;
         flex-direction: column;
     }
-
+    &-item{
+        @extend .mb-sm;
+        background-color: $sWhite;
+        padding: 16px;
+        border-radius: 4px;
+        box-shadow: 2px 6px 5px rgba(255, 255, 255, 0.4);
+    }
     &-service{
         @extend .font-lg;
         font-weight: 600;
@@ -50,7 +66,19 @@ body{
         @extend .font-md;
         color:$SubTitle;
     }
-
+    &-thumb{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        img{
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+    }
     &-caption{
         @extend .font-sm;
     }
